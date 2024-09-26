@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista Web - IE José María Silva Salazar</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .article {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: calc(33.333% - 10px);
+            height: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .interactive-button {
+            padding: 10px 20px;
+            background-color: #555;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .interactive-button:hover {
+            background-color: #777;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Revista Web de la Institución Educativa José María Silva Salazar</h1>
+        <p>Explora los proyectos y actividades de nuestra comunidad educativa</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#deportes">Deportes</a>
+        <a href="#semillero">Semillero Curiosum</a>
+        <a href="#buenavista">Buenavista Ancestral</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <div class="article" id="inicio">
+            <h2>Bienvenidos a Nuestra Revista</h2>
+            <p>En esta revista educativa, encontrarás información relevante sobre nuestra institución, los logros de nuestros estudiantes y docentes, y proyectos que impactan directamente a nuestra comunidad. Nuestra institución promueve la cultura, la ciencia y el deporte como ejes fundamentales para el crecimiento integral de nuestros estudiantes.</p>
+            <p>Desde el Proyecto Semillero Curiosum hasta el rescate de las tradiciones locales con Buenavista Ancestral, aquí podrás profundizar en cada una de las iniciativas que nos convierten en una institución líder.</p>
+        </div>
+
+        <div class="article" id="deportes">
+            <h2>Deportes en la IE José María Silva Salazar</h2>
+            <p>El deporte es parte integral de nuestra propuesta educativa. Contamos con una amplia gama de actividades deportivas que fomentan el trabajo en equipo, la disciplina y el bienestar físico y mental de nuestros estudiantes. Las disciplinas que promovemos incluyen fútbol, baloncesto, voleibol, y el popular Ultimate Frisbee.</p>
+            <p>Además, nuestros equipos deportivos participan activamente en competencias locales e intercolegiales, donde han logrado destacarse por su compromiso y esfuerzo.</p>
+            <div class="gallery">
+                <img src="c:\Users\User\Downloads\WhatsApp Image 2024-09-19 at 11.32.14 AM.jpeg" alt="Fútbol en la institución">
+                <img src="c:\Users\User\Downloads\WhatsApp Image 2024-09-23 at 2.39.19 PM.jpeg" alt="Futbol Masculino">
+                <img src="c:\Users\User\Downloads\WhatsApp Image 2024-09-22 at 6.57.07 PM.jpeg" alt="Partido de voleibol">
+            </div>
+            <button class="interactive-button" onclick="mostrarOculto('info-deportes')">Leer más sobre deportes</button>
+            <p id="info-deportes" class="hidden">Nuestros programas deportivos están diseñados para ofrecer oportunidades a todos los estudiantes. Ya sea que participen de manera recreativa o competitiva, creemos que el deporte ayuda a formar valores fundamentales como el respeto, la responsabilidad y la perseverancia.</p>
+        </div>
+
+        <div class="article" id="semillero">
+            <h2>Proyecto Semillero Curiosum</h2>
+            <p>El Semillero Curiosum es uno de nuestros proyectos más innovadores. En él, los estudiantes tienen la oportunidad de explorar diferentes áreas de la ciencia, tecnología, ingeniería y matemáticas (STEM). A través de talleres y proyectos, los estudiantes desarrollan habilidades en robótica, programación y biotecnología.</p>
+            <p>Este proyecto ha logrado grandes avances en la comunidad educativa, permitiendo que nuestros jóvenes descubran y desarrollen su pasión por la investigación científica. Curiosum fomenta la curiosidad y el pensamiento crítico, y ha sido reconocido a nivel regional.</p>
+            <div class="gallery">
+                <img src="C:\Users\User\Downloads\WhatsApp Image 2024-09-23 at 2.50.04 PM.jpeg" alt="Estudiantes en un taller de robótica">
+                <img src="C:\Users\User\Downloads\WhatsApp Image 2024-09-23 at 2.50.03 PM.jpeg" alt="Proyectos del Semillero Curiosum">
+            </div>
+            <button class="interactive-button" onclick="mostrarOculto('info-semillero')">Leer más sobre el Semillero</button>
+            <p id="info-semillero" class="hidden">El Semillero Curiosum ha dado lugar a proyectos científicos innovadores que han permitido que nuestros estudiantes ganen competencias regionales y nacionales. Nos enorgullece ver el entusiasmo con el que los jóvenes abrazan la ciencia.</p>
+        </div>
+
+        <div class="article" id="buenavista">
+            <h2>Proyecto Buenavista Ancestral</h2>
+            <p>Buenavista Ancestral es un proyecto que tiene como objetivo rescatar las tradiciones, costumbres y valores de nuestra región. A través de investigaciones históricas y actividades culturales, nuestros estudiantes se sumergen en la riqueza cultural de Buenavista, aprendiendo sobre su historia y cómo mantener vivas sus tradiciones.</p>
+            <p>Este proyecto fomenta el sentido de identidad y pertenencia en nuestros estudiantes, quienes se convierten en guardianes de la memoria histórica de nuestra comunidad.</p>
+            <div class="gallery">
+                <img src="c:\Users\User\Downloads\WhatsApp Image 2024-09-22 at 7.49.51 PM (2).jpeg" alt="Ceremonia cultural en Buenavista">
+                <img src="c:\Users\User\Downloads\WhatsApp Image 2024-09-22 at 7.49.51 PM.jpeg" alt="Investigación histórica sobre Buenavista">
+                <img src="c:\Users\User\Downloads\WhatsApp Image 2024-09-22 at 7.49.50 PM.jpeg" alt="Arte Rupestre">
+                
+            </div>
+            <button class="interactive-button" onclick="mostrarOculto('info-buenavista')">Leer más sobre Buenavista</button>
+            <p id="info-buenavista" class="hidden">Los estudiantes de la IE José María Silva Salazar han liderado investigaciones sobre las costumbres ancestrales de Buenavista, entrevistando a ancianos de la comunidad y documentando historias que forman parte del patrimonio cultural de la región.</p>
+        </div>
+
+        <div class="article" id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Tienes preguntas o te gustaría saber más sobre nuestros proyectos? ¡Nos encantaría saber de ti! Contáctanos a través del correo electrónico <strong>info@iesilvasalazar.edu</strong> o síguenos en nuestras redes sociales.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Institución Educativa José María Silva Salazar - Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        function mostrarOculto(id) {
+            var elemento = document.getElementById(id);
+            if (elemento.classList.contains('hidden')) {
+                elemento.classList.remove('hidden');
+            } else {
+                elemento.classList.add('hidden');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+
+      
